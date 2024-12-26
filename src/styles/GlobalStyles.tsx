@@ -23,6 +23,8 @@ export const GlobalStyle = createGlobalStyle`
     
     a {
         text-decoration: none;
+        cursor: pointer;
+        
     }
     
     ul {
@@ -32,6 +34,7 @@ export const GlobalStyle = createGlobalStyle`
     button {
         background: unset;
         border: none;
+        cursor: pointer;
     }
     
     section:nth-of-type(odd) {

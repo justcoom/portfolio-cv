@@ -36,7 +36,7 @@ const StyledMenu = styled.nav`
 
 const ListItem = styled.li`
     &:hover {
-        text-decoration: underline;
+        text-decoration: 3px underline;
         text-decoration-color: ${theme.colors.accent};
     }
 `
@@ -50,12 +50,6 @@ const Link = styled.a`
 `
 
 const StyledButton = styled(Button)`
-    color: rgba(255, 255, 255, 1);
-    padding: 8px 20px;
     max-width: 111px;
-    background: rgba(45, 44, 44, 1);
     
-    &:hover {
-        background: linear-gradient(90deg,#f9f295,#e0aa3e,#ffd700);
-    }
 `

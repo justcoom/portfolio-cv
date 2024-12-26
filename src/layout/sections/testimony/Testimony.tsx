@@ -64,7 +64,7 @@ const StyledTestimony = styled.section`
 `
 
 const SectionTitle = styled.h3`
-    font-size: 16px;
+    font-size: 36px;
     font-weight: 900;
     line-height: 1.5;
 `

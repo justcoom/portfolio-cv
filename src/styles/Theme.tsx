@@ -5,6 +5,7 @@ export const theme = {
         secondaryBg: "rgba(19, 18, 18, 1)",
         accent: "#ffd700",
 
-        font: "#FFF"
+        font: "#FFF",
+        placeholderColor: "rgba(80, 80, 80, 1)"
     }
 }
