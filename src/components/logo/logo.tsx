@@ -1,10 +1,16 @@
 import React from 'react';
-import {Icon} from "../icon/Icon";
+import logoPhoto from "../../assets/images/logo.webp"
+import styled from "styled-components";
 
 export const Logo = () => {
     return (
             <a href="">
-                <Icon iconId={"twitter"}/>
+                <Logotip src={logoPhoto} alt="cv logo"/>
             </a>
     );
 };
+
+const Logotip = styled.img`
+    width: 40px;
+    height: 40px;
+`
