@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import React from 'react';
+import {FlexWrapper} from "../../../../components/FlexWrapper";
 
 type SkillPropsType = {
     number: string;
@@ -12,26 +13,34 @@ export const Skill = (props: SkillPropsType) => {
         <StyledSkill>
             {/*можно добавить иконку*/}
             <SkillNumber>{props.number}</SkillNumber>
-            <SkillTitle>{props.title}</SkillTitle>
-            <SkillText>{props.text}</SkillText>
+            <FlexWrapper direction={"column"}>
+                <SkillTitle>{props.title}</SkillTitle>
+                <SkillText>{props.text}</SkillText>
+            </FlexWrapper>
         </StyledSkill>
     );
 };
 
 const StyledSkill = styled.div`
-    background-color: lightcyan;
-    width: 33%;
+    display: flex;
+    gap: 35px;
+    max-width: 440px;
 `
 
 const SkillNumber = styled.span`
-    
+    font-size: 70px;
+    font-weight: 100;
+    margin: 17px 0 57px;
 `
 
 const SkillTitle = styled.h3`
-    
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 5px;
 `
 
 const SkillText = styled.p`
-    
+    font-size: 18px;
+    font-weight: 200;
 `
 
